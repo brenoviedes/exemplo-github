@@ -1,6 +1,14 @@
-import './style.css'
 
-document.querySelector('#app').innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`
+const $ = document.querySelector.bind(document);
+
+const addTask = (event) => {
+
+    event.preventDefault();
+    const taskDescription = $('#task-description').value;
+    const newTaskItem = `
+        <li>${taskDescription}</li>
+    `;
+
+    $('#task-list').insertAdjacentHTML('beforeend', newTaskItem);
+    $('#task-form').reset();
+}

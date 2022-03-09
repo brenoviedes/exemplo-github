@@ -1,8 +1,49 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: title;
+  src: url(fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: projeto_regular;
+  src: url(fonts/Lato-Regular.ttf);
+}
+
+body {
+  margin: 0;
+}
+
+#container {
+  margin: 30px auto;
+  width: 60%;
+}
+
+h1 {
+  font-family: "title";
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+#task-form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#task-description {
+  border: none;
+  border-bottom: 2px solid #aaa;
+  outline: none;
+  padding: 5px 10px;
+  width: 60%;
+  margin-right: 10px;
+  font-family: "projeto_regular";
+  text-align: center;
+}
+
+#task-form button {
+  color: #FFF;
+  background-color: rgba(0, 0, 255, 0.7);
+  border: none;
+  font-family: "title";
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
 }
